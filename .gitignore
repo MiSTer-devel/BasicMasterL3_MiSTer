@@ -1,0 +1,19 @@
+# build output
+output_files/
+db/
+incremental_db/
+build_id.v
+*.qws
+*.rpt
+*.summary
+*.smsg
+*.done
+*.jdi
+*.pin
+*.sld
+*.qarlog
+c5_pin_model_dump.txt
+PLLJ_PLLSPE_INFO.txt
+# ROM images are not distributed
+*.rom
+.DS_Store
