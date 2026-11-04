@@ -91,8 +91,9 @@ Typing is paced at about 9 characters per second so the ROM sees every key.
 
 ## Development
 
-Development happens at <https://github.com/alanswx/BasicMasterL3_MiSTer>, which also has
-the Verilator simulator, hardware notes and the research behind the core.
+`vsim/` is a Verilator simulator of the core, with a headless mode for scripted tests (see
+`vsim/README.md`). Development happens at <https://github.com/alanswx/BasicMasterL3_MiSTer>,
+which also has the hardware notes and the research behind the core.
 
 Behaviour follows Sasaji's EmuB-6892 and EmuB-S1 emulators. The 6809 is the
 Vectrex-development `mc6809is`, the floppy controller is `wd1793.sv` from the FM-7 core, and

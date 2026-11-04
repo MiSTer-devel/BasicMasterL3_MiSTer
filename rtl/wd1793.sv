@@ -438,7 +438,7 @@ always @(posedge clk_sys) begin
 	// No `= 0` initialisers here, and that is not style. Verilator treats a
 	// declaration initialiser on a block-scoped reg as a BLOCKING assignment,
 	// so pairing one with the `<=` updates below is BLKANDNBLK -- a hard error
-	// on Verilator 4.x, which the development repo's simulator still supports. Both
+	// on Verilator 4.x, which `vsim/Makefile` deliberately still supports. Both
 	// toolchains power these up to 0 anyway (Cyclone V registers, and
 	// `--x-initial fast`), which is what the have_image gate below relies on.
 	reg [2:0] old_disk_index;

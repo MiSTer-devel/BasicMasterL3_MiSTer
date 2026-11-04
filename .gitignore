@@ -18,3 +18,7 @@ PLLJ_PLLSPE_INFO.txt
 # ROM images are not distributed
 *.rom
 .DS_Store
+# simulator output
+vsim/obj_dir/
+vsim/*.png
+vsim/memdump_*.bin
